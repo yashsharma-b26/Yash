@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Sharma | Digital Marketing Specialist</title>
+  <style>
+    :root {
+      --bg-color-light: #f4f4f4;
+      --text-color-light: #222;
+      --accent-color-light: #0078ff;
+
+      --bg-color-dark: #121212;
+      --text-color-dark: #f9f9f9;
+      --accent-color-dark: #00bfff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color-dark);
+      color: var(--text-color-dark);
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 40px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: var(--accent-color-dark);
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1em;
+    }
+
+    a {
+      color: var(--accent-color-dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .theme-toggle {
+      margin-top: 25px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      background: var(--accent-color-dark);
+      color: white;
+      font-size: 0.9em;
+      transition: background 0.3s;
+    }
+
+    .theme-toggle:hover {
+      background: #0080ff;
+    }
+
+    /* Light theme */
+    body.light {
+      background-color: var(--bg-color-light);
+      color: var(--text-color-light);
+    }
+    body.light h1, body.light a {
+      color: var(--accent-color-light);
+    }
+    body.light .theme-toggle {
+      background: var(--accent-color-light);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8em;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Yash Sharma</h1>
+    <p><strong>Digital & Performance Marketing Expert</strong><br>
+    Google Ads • Meta Ads • SEO • Web Design • Branding • Canva Pro</p>
+
+    <p>Email: <a href="mailto:yashsharma90116@gmail.com">yashsharma90116@gmail.com</a><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/yash-sharma-b6a007220" target="_blank">linkedin.com/in/yash-sharma-b6a007220</a></p>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
+  </div>
+
+  <footer>© 2025 Yash Sharma | All Rights Reserved</footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
