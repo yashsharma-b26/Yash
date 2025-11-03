@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Sharma | Digital Marketing Specialist</title>
+  <style>
+    :root {
+      --light-bg: #f9f9f9;
+      --light-text: #111;
+      --dark-bg: #111;
+      --dark-text: #f9f9f9;
+      --accent: #00bcd4;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--light-bg);
+      color: var(--light-text);
+      transition: all 0.4s ease;
+    }
+    .dark {
+      background: var(--dark-bg);
+      color: var(--dark-text);
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+    p {
+      max-width: 700px;
+      margin: 1rem auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 1rem;
+    }
+    button {
+      display: block;
+      margin: 2rem auto;
+      padding: 10px 20px;
+      border: none;
+      background: var(--accent);
+      color: white;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yash Sharma</h1>
+    <p>Digital & Performance Marketing Specialist with ₹1Cr+ ad spend managed and 1000+ campaigns delivered.  
+       Expert in Google, Meta, LinkedIn, Amazon & Flipkart Ads, SEO, Website Design, and Canva.</p>
+    <div class="links">
+      <a href="mailto:yashsharma90116@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/yash-sharma-b6a007220">🔗 LinkedIn</a>
+    </div>
+    <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+  </header>
+
+  <footer>© 2025 Yash Sharma | All Rights Reserved</footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
