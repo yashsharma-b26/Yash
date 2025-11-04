@@ -1,158 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yash | Digital & Performance Marketing Specialist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Sharma | Digital Marketing Specialist</title>
   <style>
     :root {
-      --primary: #0078ff;
-      --dark-bg: #0d1117;
-      --light-bg: #f5f5f5;
-      --text-dark: #f5f5f5;
-      --text-light: #222;
+      --bg-color-light: #f4f4f4;
+      --text-color-light: #222;
+      --accent-color-light: #0078ff;
+
+      --bg-color-dark: #121212;
+      --text-color-dark: #f9f9f9;
+      --accent-color-dark: #00bfff;
     }
+
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: var(--dark-bg);
-      color: var(--text-dark);
-      transition: 0.4s ease;
-    }
-    header {
+      background-color: var(--bg-color-dark);
+      color: var(--text-color-dark);
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 60px 20px 30px;
     }
+
+    .container {
+      max-width: 600px;
+      padding: 40px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
     h1 {
-      font-size: 2.5em;
-      margin: 0;
-      color: var(--primary);
+      font-size: 2.2em;
+      color: var(--accent-color-dark);
+      margin-bottom: 10px;
     }
-    h2 {
-      font-weight: 400;
-      margin: 10px 0 30px;
-    }
-    button {
-      background: var(--primary);
-      border: none;
-      color: #fff;
-      padding: 12px 28px;
-      border-radius: 30px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: 0.3s ease;
-    }
-    button:hover {
-      background: #0056c8;
-    }
-    section {
-      width: 90%;
-      max-width: 800px;
-      margin: 40px auto;
-      text-align: center;
-    }
-    h3 {
-      color: var(--primary);
-      margin-bottom: 15px;
-    }
+
     p {
       line-height: 1.6;
-      font-size: 17px;
+      font-size: 1em;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 10px 0;
-      font-size: 17px;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 0;
-      border-top: 1px solid #333;
-      font-size: 15px;
-    }
+
     a {
-      color: var(--primary);
+      color: var(--accent-color-dark);
       text-decoration: none;
+      font-weight: 500;
     }
+
     .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--primary);
+      margin-top: 25px;
+      padding: 10px 20px;
       border: none;
-      color: white;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
+      border-radius: 25px;
       cursor: pointer;
-      font-size: 18px;
+      background: var(--accent-color-dark);
+      color: white;
+      font-size: 0.9em;
+      transition: background 0.3s;
     }
-    .light-mode {
-      background: var(--light-bg);
-      color: var(--text-light);
+
+    .theme-toggle:hover {
+      background: #0080ff;
     }
-    .light-mode footer {
-      border-color: #ddd;
+
+    /* Light theme */
+    body.light {
+      background-color: var(--bg-color-light);
+      color: var(--text-color-light);
+    }
+    body.light h1, body.light a {
+      color: var(--accent-color-light);
+    }
+    body.light .theme-toggle {
+      background: var(--accent-color-light);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8em;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()">☀️</button>
-
-  <header>
+  <div class="container">
     <h1>Yash Sharma</h1>
-    <h2>Digital & Performance Marketing Specialist</h2>
-    <button onclick="window.location.href='mailto:yashsharma90116@gmail.com'">Hire Me</button>
-  </header>
+    <p><strong>Digital & Performance Marketing Expert</strong><br>
+    Google Ads • Meta Ads • SEO • Web Design • Branding • Canva Pro</p>
 
-  <section>
-    <h3>About Me</h3>
-    <p>
-      I’m a results-driven Digital & Performance Marketing Specialist with 1Cr+ ad spend managed and over 1000 successful campaigns across Google, Meta, LinkedIn, Amazon & Flipkart Ads. I combine creativity and analytics to deliver high-impact marketing solutions that drive measurable growth.
-    </p>
-  </section>
+    <p>Email: <a href="mailto:yashsharma90116@gmail.com">yashsharma90116@gmail.com</a><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/yash-sharma-b6a007220" target="_blank">linkedin.com/in/yash-sharma-b6a007220</a></p>
 
-  <section>
-    <h3>Core Skills</h3>
-    <ul>
-      <li>Performance Marketing Strategy</li>
-      <li>Google, Meta, LinkedIn, Amazon & Flipkart Ads</li>
-      <li>SEO & Conversion Optimization</li>
-      <li>Website Design & Landing Page Development</li>
-      <li>Canva Expert – Visual Branding & Content Creation</li>
-      <li>Analytics, ROI Tracking & Growth Strategy</li>
-    </ul>
-  </section>
+    <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
+  </div>
 
-  <section>
-    <h3>Projects & Achievements</h3>
-    <p>
-      • Managed ad budgets exceeding ₹1 Crore with consistent ROI growth.<br />
-      • Executed 1000+ successful digital campaigns.<br />
-      • Helped brands achieve 3x–5x returns through targeted performance marketing.<br />
-      • Designed high-converting websites and marketing creatives that scale brands.
-    </p>
-  </section>
-
-  <section>
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:yashsharma90116@gmail.com">yashsharma90116@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yash-sharma-b6a007220" target="_blank">linkedin.com/in/yash-sharma</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Yash Sharma | Built with 💻 by Yash</p>
-  </footer>
+  <footer>© 2025 Yash Sharma | All Rights Reserved</footer>
 
   <script>
     function toggleTheme() {
-      document.body.classList.toggle("light-mode");
-      const btn = document.querySelector(".theme-toggle");
-      btn.textContent = document.body.classList.contains("light-mode") ? "🌙" : "☀️";
+      document.body.classList.toggle('light');
     }
   </script>
 </body>
